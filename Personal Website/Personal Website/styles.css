@@ -1,0 +1,88 @@
+:root {
+    --main-bg-color: black;
+    --secondary-bg-color: darkblue;
+    --bg-color-3: darkred;
+    --main-text-color: white;
+}
+body {
+    vertical-align: middle;
+    margin: 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    position: relative;
+    font-size: 20px;
+}
+header {
+    margin: 0;
+    padding: 0.5em;
+    top: 0;
+    min-width: 100vw;
+    min-height: 20vh;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    min-width: 100vw;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    margin-top: auto;
+    vertical-align: bottom;
+    font-size: 2vh;
+}
+.grid {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: grid;
+    gap: 1em 1em;
+    padding: 0;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto 70vh auto;
+}
+.portfoliogrid {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: grid;
+    gap: 1em 1em;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+}
+.flexbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+}
+a{
+    text-decoration: unset;
+    font-style:italic;
+    font-weight:bold;
+    color: var(--main-text-color);
+}
+section{
+    margin: auto;
+    margin-right: 50px;
+}
+img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+div{
+    margin:0;
+}
